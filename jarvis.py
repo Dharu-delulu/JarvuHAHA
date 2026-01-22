@@ -74,4 +74,10 @@ def run_jarvis():
             speak(f"Playing {song}")
             pywhatkit.playonyt(song)
 
+
+        if "time" in command:
+            time_now = datetime.datetime.now().strftime("%I:%M %p")
+            speak(f"The current time is {time_now}")
+            print(time_now)
 run_jarvis()
+
